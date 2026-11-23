@@ -1,0 +1,121 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[polish]{babel}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref} 
+\usepackage{booktabs}
+\usepackage{csvsimple}
+\usepackage[table]{xcolor}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{pdfpages}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+\usepackage{float}
+\usepackage{adjustbox}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+\newgeometry{left=1.6in, right=2in}
+\vspace*{1.5cm}
+
+\noindent  \textcolor{gray}{\large Piotr Marszałek, Julia Łaszyca, Aleksandra Skibińska} \\
+\vspace{1cm}
+
+\noindent \textbf{\Large Część laboratoryjna Biofizyki - Ćwiczenie 2} \\
+\vspace{0.5cm}
+
+\noindent {\large Określanie potencjału dyfuzji\textbf{} } \\
+
+
+Listopad 2026 \\
+
+\vspace{0.4cm}
+\noindent Politechnika Gdańska \\
+Wydział Elektroniki, Telekomunikacji i Informatyki \\
+Katedra Inżynierii Biomedycznej \\
+
+\begin{figure}[b]
+    \includegraphics[width=0.44\textwidth]{logol.jpg}
+\end{figure}
+\end{titlepage}
+
+
+
+
+\section*{Aparatura użyta do wykonania zadania}
+    \begin{itemize}
+        \item Komputer osobisty z programem symulacyjnym równania Nernsta
+    \end{itemize}
+    
+\section*{Sprawozdanie właściwe}
+
+\section{Cele doświadczenia}
+    \begin{itemize}
+        \item Zapoznanie się ze zjawiskami transportu ładunków elektrycznych w ciele
+        \item Pomiar potencjału dyfuzyjnego
+        \item Określenie i porównanie przepuszczalności błony dla kationów sodu ($Na^{+})$
+        \item Nakreślenie zależności potencjału dyfuzyjnego od temperatury wybranej różnicy stężeń
+    \end{itemize}
+
+    
+\section{Krótki punktowy opis przebiegu ćwiczenia}
+    \begin{enumerate}[label=(\alph*)]
+        \item Wyznaczono wartość potencjału dyfuzyjnego dla danych eksperymentalnych wraz z niepewnościami.\newline
+        \item Obliczono wartość teoretyczną potencjału dyfuzji dla każdego pomiaru. \newline
+        \item Wykonano symulację dla tych samych stężeń Na. (W przypadku stężeń w pomiarze 4 i 5 odpowiednio przeskalować stężenie tak, żeby symulacja była możliwa)\newline
+        \item Porównano potencjał dyfuzyjny wyznaczony eksperymentalnie, zasymulowany oraz wyliczony teoretycznie.  \newline
+        \item Wyznaczono za pomocą symulatora dla dowolnie wybranej różnicy stężeń zależność potencjału dyfuzyjnego od temperatury. (Narysować wykres i dopasować go odpowiednią funkcją)\newline
+    \end{enumerate}
+
+\section{Dane oraz wzory}
+    \begin{table}[!h]
+        \centering
+        \csvautotabular[
+            separator=semicolon,
+            respect underscore=true
+            ]{cw2tab1.csv}
+        \caption{Dane ćwiczeniowe}
+        \label{tab:tab1}
+    \end{table}
+    
+    \begin{table}[!h]
+        \centering
+        \csvautotabular[
+            separator=semicolon,
+            respect underscore=true
+            ]{cw2tab2.csv}
+        \caption{Przedłużenie tabeli \ref{tab:tab1}}
+        \label{tab:tab2}
+    \end{table}
+    \begin{equation}
+        \Delta\varphi=-\frac{RT}{F}[\frac{t_+}{z_+}-\frac{t_-}{t_+}]ln\frac{c_2}{c_1}
+    \end{equation}
+    
+        \text{Równanie Hendersona}
+    
+\section{Pomiary: 1, 2, oraz 3}
+
+    \subsection{}
+
+    \subsection{}
+
+    \subsection{Pomiary z symulatora}
+
+\section{}na
+
+\section*{Wnioski z pracy}
+    \begin{itemize}
+        \item tutaj dajcie wnioski
+    \end{itemize}
+
+    Praca została wykonana bez pomocy sztucznej inteligencji
+\end{document}
+ 
