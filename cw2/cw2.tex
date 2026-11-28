@@ -95,11 +95,22 @@ Katedra Inżynierii Biomedycznej \\
         \caption{Przedłużenie tabeli \ref{tab:tab1}}
         \label{tab:tab2}
     \end{table}
-    \begin{equation}
-        \Delta\varphi=-\frac{RT}{F}[\frac{t_+}{z_+}-\frac{t_-}{t_+}]ln\frac{c_2}{c_1}
-    \end{equation}
     
-        \text{Równanie Hendersona}
+\FloatBarrier
+    \begin{equation}
+        \Delta\varphi=-\frac{RT}{F}\left[\frac{t_+}{z_+}-\frac{t_-}{z_-}\right]ln\frac{c_2}{c_1}
+        \label{eq:henderson}
+    \end{equation}
+
+
+    \begin{center}
+        Równanie Hendersona \\
+    \end{center}
+    $\Delta\varphi$: potencjał dyfuzyjny\\
+    $t_{+/-}$: liczby przenoszenia dla kationu/anionu\\
+    $c_{1/2}$: stężenia elektrolitów po różnych stronach membrany\\
+    $R, T, F$: stała gazowa, temperatura absolutna[$^\circ K$], stała Faradaya\\
+        
     
 \section{Pomiary: 1, 2, oraz 3}
 
@@ -110,7 +121,7 @@ Katedra Inżynierii Biomedycznej \\
     \subsection{Pomiary z symulatora}
 
 
-        \begin{table}[h]
+        \begin{table}[!h]
             \centering
             \begin{tabular}{|c|c|c|}\hline
                  lp.&proporcja $[\frac{kom.1}{kom.2}]$ &pomiar 3 \\[3pt] \hline
@@ -123,16 +134,25 @@ Katedra Inżynierii Biomedycznej \\
             \caption{Pomiary z symulatora}
             \label{tab:symulator}
         \end{table}
-        Wnioski symulatorowe   
+        \FloatBarrier
+        Wyniki potencjałów z tabeli \ref{tab:symulator} pokazują, że symulator prawdopodobnie zaokrągla wyniki\\[1\baselineskip]
+        W idealnym środowisku symulatora margines błędu wynosi zero, więc dla równych proporcji otrzymujemy równe pomiary.
+
+        
+        
 \section{Zależność potencjału dyfuzyjnego od temperatury dla różnicy stężeń $\frac{kom.1}{kom.2}=\frac{27}{10}$}
-    
     \begin{figure}[!h]
         \centering
         \includegraphics[width=0.9\linewidth]{screenshots.pdf}
         \caption{Wykres zależności potencjału dyfuzyjnego od temperatury dla zadanej różnicy stężeń}
         \label{fig:wykres}
     \end{figure}
-\FloatBarrier
+    \FloatBarrier
+
+    Jak widać na rysunku \ref{fig:wykres}, zgodnie ze wzorem \ref{eq:henderson}, wartość potencjału dyfuzyjnego maleje wraz ze zwiększaniem się wartości temperatury.\\[1\baselineskip]
+    Przy zmienności temperatury potencjał spada liniowo ze względu na ujemny współczynnik kierunkowy.\\[1\baselineskip]
+    Warto zauważyć, że wyidealizowane pomiary otrzymane z symulatora wyprodukowały niemal idealną prostą, której parametr $R^2 \approx 1$
+
 \section*{Wnioski z pracy}
     \begin{itemize}
         \item tutaj  
